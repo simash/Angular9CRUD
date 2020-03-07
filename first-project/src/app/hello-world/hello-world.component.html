@@ -1,0 +1,32 @@
+<p>hello-world works!</p>
+<p>{{employeeList}}</p>
+<button (click) ="onclick()">Print EmployeeList</button>
+<div *ngIf = "response && isShow" >
+        <table class ="table">
+            <thead>
+            <tr>
+                <th scope="col">userId</th>
+                <th scope="col">id</th>
+                <th scope="col">title</th>
+                <th scope="col">completed</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr *ngFor ="let data of response">
+                <td>{{data.userId}}</td>
+                <td>{{data.id}}</td>
+                <td>{{data.title}}</td>
+                <td>{{data.completed}}</td>
+             </tr>
+            </tbody>
+             
+        </table>
+<p> Response : {{response[1].title}}</p>
+</div>
+<div *ngIf="errorMsg">
+    <p> ErrorMessage : {{errorMsg.error.error}}</p>
+    <p> ErrorMessage : {{errorMsg.message}}</p>
+</div>
+
+
+

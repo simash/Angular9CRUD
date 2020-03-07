@@ -1,0 +1,8 @@
+<div *ngFor = "let employee of employeeList" class = "container">
+    <p><b>Name :</b> {{employee.name}}</p>
+    <p><b>Gender :</b> {{employee.gender}}</p>
+    <p><b>Is Active :</b>{{employee.isActive}}</p>
+    <p><b>Phone :</b>{{employee.phoneNumber}}</p>
+    <p><b>Date Of Birth  :</b>{{employee.dateOfBirth}}</p>
+   <h3>Photo : </h3> <img [src] = "employee.photoPath" />
+</div>

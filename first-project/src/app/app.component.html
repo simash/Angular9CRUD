@@ -1,0 +1,20 @@
+<div class = "container">
+<p>app is running {{title}}</p>
+
+<app-hello-world></app-hello-world>
+
+
+<div class ="routerDiv">
+    <nav class = "navbar navbar-default">
+        <ul class = "nav navbar-nav">
+            <li>
+                <a routerLinkActive ="active" routerLink ="list">ListEmployee</a>
+            </li>
+            <li>
+                <a routerLinkActive ="active" routerLink ="create">Create Employee</a>
+            </li>
+        </ul>
+    </nav>
+   <router-outlet></router-outlet>
+</div>
+</div>
